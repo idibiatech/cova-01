@@ -141,7 +141,7 @@ header {
 .right-hero {
 	/* background-color: green; */
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
 }
 .hero-image-container {
