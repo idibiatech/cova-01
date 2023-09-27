@@ -3,7 +3,6 @@ let listItem = document.querySelectorAll(".links-wrapper ");
 let navOPen = false;
 ham.classList.add("bar-icon");
 ham.addEventListener("click", () => {
-	// console.log(navOPen);
 	let mm = gsap.matchMedia();
 	mm.add("(max-width: 800px)", () => {
 		if (navOPen) {

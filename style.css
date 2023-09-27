@@ -39,22 +39,22 @@ header {
 	height: 10vh;
 	position: relative;
 }
-nav {
+.mobile-nav {
 	background-color: green;
-	position: absolute;
-	height: 100vh;
+	/* position: absolute; */
+	height: 10vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	height: 100vh;
+	/* height: 100vh; */
 }
 .links-wrapper {
 	display: flex;
 	align-items: center;
 	position: fixed;
-	/* bottom: 0; */
+	bottom: 0;
 	/* margin-left: auto; */
 	right: 0;
 	height: 100vh;
@@ -75,5 +75,8 @@ nav {
 		position: fixed;
 		width: 100%;
 		background-color: red;
+	}
+	.ham {
+		display: none;
 	}
 }
