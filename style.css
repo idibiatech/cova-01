@@ -16,6 +16,7 @@ li,
 a {
 	list-style-type: none;
 	text-decoration: none;
+	font-family: var(--main-font);
 }
 h1,
 h2,
@@ -25,6 +26,7 @@ h3 {
 p {
 	font-family: var(--secondary-font);
 }
+
 .logo {
 	z-index: 5;
 }
@@ -127,13 +129,14 @@ header {
 }
 .left-hero {
 	display: flex;
-	padding: 0 2rem;
+	padding: 0 2rem 3rem 2rem;
 }
 .left-hero p {
 	margin: 1rem 0;
 }
 .left-hero {
 	display: flex;
+	justify-content: end;
 }
 .left-hero h1 {
 	font-size: 2rem;
@@ -225,8 +228,10 @@ footer .footer-columns {
 	}
 
 	.left-hero {
+		padding: 0;
 		display: flex;
 		padding: 0 2rem;
+		justify-content: center;
 	}
 
 	.right-hero {
