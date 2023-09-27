@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li,
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+header {
+	background-color: yellow;
+	height: 10vh;
+	position: relative;
+}
+nav {
+	background-color: green;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.links-wrapper ul li {
+	margin: 1rem 0;
+}
+
+@media screen and (min-width: 800px) {
+	header {
+		position: fixed;
+		width: 100%;
+		background-color: red;
+	}
+}
