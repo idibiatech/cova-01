@@ -1,5 +1,5 @@
 const ham = document.querySelector(".ham");
-let listItem = document.querySelectorAll(".links-wrapper li");
+let listItem = document.querySelectorAll(".links-wrapper ");
 let navOPen = false;
 ham.classList.add("bar-icon");
 ham.addEventListener("click", () => {
@@ -18,8 +18,8 @@ ham.addEventListener("click", () => {
 				// x: 20,
 				stagger: 0.3,
 			});
-			hamAnime.to(".nav-link-container", {
-				x: 300,
+			hamAnime.to(".links-wrapper", {
+				x: "100%",
 				ease: "back.out(1.7)",
 			});
 
@@ -45,7 +45,7 @@ ham.addEventListener("click", () => {
 						duration: 0.3,
 						ease: "back.out(1.7)",
 					});
-					// let listItem = document.querySelectorAll(".links-wrapper li");
+					let listItem = document.querySelectorAll(".links-wrapper li");
 					listItem.forEach((item) => {
 						item.style.opacity = 1;
 					});
@@ -61,7 +61,7 @@ ham.addEventListener("click", () => {
 				rotation: 0,
 				ease: "back.out(1.7)",
 			});
-			hamAnime.to(".nav-link-container", {
+			hamAnime.to(".links-wrapper", {
 				x: 0,
 				ease: "circ.out",
 			});
