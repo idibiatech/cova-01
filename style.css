@@ -59,6 +59,11 @@ button {
 	border-radius: 30px;
 	outline: none;
 	border: 0;
+	transition: all 0.3s ease;
+	box-shadow: 0.1px 0.1px 0.2px 0.4px rgba(0, 0, 0, 0.295);
+}
+button:hover {
+	box-shadow: 0.4px 0.4px 0.6px 0.8px rgba(0, 0, 0, 0.295);
 }
 .pc-nav {
 	display: none;
@@ -117,15 +122,18 @@ header {
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
 	flex-direction: column;
 }
 .left-hero {
-	/* background-color: red; */
 	display: flex;
-	/* justify-content: space-evenly; */
-	/* line-height: 0; */
-	/* padding: 1rem 0; */
+	padding: 0 2rem;
+}
+.left-hero p {
+	margin: 1rem 0;
+}
+.left-hero {
+	display: flex;
 }
 .left-hero h1 {
 	font-size: 2rem;
@@ -157,6 +165,8 @@ footer {
 }
 footer .footer-columns {
 	margin: 1rem 0;
+	/* padding: var(--main-pad-pc); */
+	padding: 1rem;
 }
 
 /* tablet screen size  */
@@ -211,8 +221,10 @@ footer .footer-columns {
 		height: 100%;
 		width: 100%;
 	}
+
 	.left-hero {
-		padding: 20rem 0;
+		display: flex;
+		padding: 0 2rem;
 	}
 
 	.right-hero {
