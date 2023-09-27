@@ -15,7 +15,7 @@ ham.addEventListener("click", () => {
 			hamAnime.to(".links-wrapper li", {
 				opacity: 0,
 				// x: 20,
-				stagger: 0.3,
+				stagger: 0.1,
 			});
 			hamAnime.to(".links-wrapper", {
 				x: "100%",
@@ -24,7 +24,7 @@ ham.addEventListener("click", () => {
 
 			hamAnime.to(".ham", {
 				rotation: 90,
-				duration: 0.4,
+				duration: 0.2,
 			});
 			hamAnime
 				.to(".ham", {
@@ -36,12 +36,12 @@ ham.addEventListener("click", () => {
 
 					hamAnime.to(".ham", {
 						scale: 1,
-						duration: 0.3,
+						duration: 0.2,
 						ease: "back.out(1.7)",
 					});
 					hamAnime.to(".ham", {
 						rotation: 0,
-						duration: 0.3,
+						duration: 0.2,
 						ease: "back.out(1.7)",
 					});
 					let listItem = document.querySelectorAll(".links-wrapper li");
@@ -67,7 +67,7 @@ ham.addEventListener("click", () => {
 			hamAnime.from(".links-wrapper li", {
 				opacity: 0,
 				y: 20,
-				stagger: 0.3,
+				stagger: 0.1,
 			});
 			// hamAnime.to(".ham", {
 			// 	rotation: 720,
@@ -76,7 +76,7 @@ ham.addEventListener("click", () => {
 			hamAnime
 				.to(".ham", {
 					scale: 0,
-					duration: 0.3,
+					duration: 0.2,
 				})
 
 				.then(() => {
