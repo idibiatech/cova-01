@@ -3,14 +3,27 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* font-family: 'Inter Tight', sans-serif; */
+/* font-family: 'League Spartan', sans-serif; */
+
 :root {
 	--main-pad-mobile: 0 1rem;
 	--main-pad-pc: 0 4rem;
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Inter Tight", sans-serif;
 }
 li,
 a {
 	list-style-type: none;
 	text-decoration: none;
+}
+h1,
+h2,
+h3 {
+	font-family: var(--main-font);
+}
+p {
+	font-family: var(--secondary-font);
 }
 .logo {
 	z-index: 5;
@@ -108,16 +121,19 @@ header {
 	flex-direction: column;
 }
 .left-hero {
-	background-color: red;
+	/* background-color: red; */
 	display: flex;
-	justify-content: space-evenly;
-	/* padding: 14rem 0; */
+	/* justify-content: space-evenly; */
+	/* line-height: 0; */
+	/* padding: 1rem 0; */
 }
 .left-hero h1 {
-	/* font-size: 4rem; */
+	font-size: 2rem;
 }
 .right-hero {
 	/* background-color: green; */
+	display: flex;
+	justify-content: start;
 }
 .hero-image-container {
 	width: 90%;
@@ -132,7 +148,17 @@ header {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
+	margin: 2rem 0;
 }
+footer {
+	padding: var(--main-pad-mobile);
+	display: flex;
+	flex-direction: column;
+}
+footer .footer-columns {
+	margin: 1rem 0;
+}
+
 /* tablet screen size  */
 @media screen and (min-width: 800px) {
 	header {
@@ -174,7 +200,7 @@ header {
 	.hero {
 		display: flex;
 		flex-direction: row;
-		height: 100vh;
+		height: 80vh;
 
 		justify-content: center;
 		padding: var(--main-pad-pc);
@@ -190,6 +216,7 @@ header {
 	}
 
 	.right-hero {
+		justify-content: center;
 	}
 	.hero-image-container {
 		width: 90%;
@@ -199,6 +226,26 @@ header {
 	}
 	.section-one {
 		padding: var(--main-pad-pc);
+		margin: 2rem 0;
+	}
+	footer {
+		padding: var(--main-pad-pc);
+		display: flex;
+		flex-direction: row;
+		margin: 1rem 1rem;
+	}
+	footer .footer-columns {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		/* text-align: center; */
+	}
+	footer .footer-columns ul {
+	}
+	footer .footer-columns:last-child {
+		background-color: red;
 	}
 }
 
