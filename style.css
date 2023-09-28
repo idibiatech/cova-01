@@ -18,6 +18,7 @@ a {
 	text-decoration: none;
 	/* font-family: "Inter Tight"; */
 	font-family: var(--main-font);
+	color: black;
 }
 
 h1,
@@ -99,7 +100,7 @@ header {
 	z-index: 1;
 	overflow: hidden;
 	width: 100%;
-	background-color: red;
+	/* background-color: whitesmoke; */
 	transform: translate(100%);
 }
 .links-wrapper ul {
@@ -116,7 +117,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	background-color: grey;
+	/* background-color: grey; */
 	justify-content: center;
 	padding: var(--main-pad-mobile);
 	background-color: whitesmoke;
@@ -165,6 +166,9 @@ header {
 	text-align: center;
 	margin: 2rem 0;
 }
+.section-one p {
+	margin: 2rem 0;
+}
 footer {
 	padding: var(--main-pad-mobile);
 	display: flex;
@@ -182,7 +186,7 @@ footer .footer-columns {
 		position: fixed;
 		width: 100%;
 		height: 10vh;
-		background-color: gray;
+		background-color: white;
 		/* background-color: red; */
 	}
 	button {
@@ -198,14 +202,14 @@ footer .footer-columns {
 	.pc-nav {
 		display: flex;
 		justify-content: space-between;
-		background-color: red;
+		/* background-color: red; */
 		padding: 0 2rem;
 		align-items: center;
 		height: 100%;
 	}
 	.links-wrapper-pc {
 		display: flex;
-		background-color: gray;
+		/* background-color: gray; */
 		width: 30%;
 	}
 	.links-wrapper-pc ul {
